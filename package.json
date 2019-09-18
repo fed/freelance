@@ -1,0 +1,9 @@
+{
+  "name": "freelance-portfolio",
+  "version": "1.0.0",
+  "description": "Freelance Portfolio",
+  "main": "index.html",
+  "repository": "git@github.com:fknussel/freelance-portfolio.git",
+  "author": "Federico Knüssel <fknussel@gmail.com>",
+  "license": "MIT"
+}

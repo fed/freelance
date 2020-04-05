@@ -138,6 +138,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.container {
+    border-bottom: 1px solid #ccc;
+    padding: 128px 25px;
+}
+
+.container:nth-child(even) {
+    background-color: #e2e3e430;
+}
+
 .header {
     margin: 0 0 64px;
     text-align: center;
@@ -168,15 +177,6 @@ body {
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
-}
-
-.container {
-    border-bottom: 1px solid #ccc;
-    padding: 128px 0;
-}
-
-.container:nth-child(even) {
-    background-color: #e2e3e430;
 }
 
 .project {

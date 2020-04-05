@@ -1,9 +1,28 @@
 {
   "name": "freelance-portfolio",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Freelance Portfolio",
-  "main": "index.html",
   "repository": "git@github.com:fknussel/freelance-portfolio.git",
   "author": "Federico Knüssel <fknussel@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server public --port=6789 --no-browser"
+  },
+  "devDependencies": {
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "live-server": "^1.2.1",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "src/**/*.{html,js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }

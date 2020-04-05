@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Freelance Portfolio</title>
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <title>Page Not Found</title>
-
-        <style>
-            body {
-                background-color: #fdd284;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                    Helvetica, Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
-            .container {
-                align-items: center;
-                display: flex;
-                height: 100vh;
-                justify-content: center;
-                width: 100vw;
-            }
-
-            .card {
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
-                color: rgb(14, 30, 37);
-                padding: 24px;
-                width: 450px;
-            }
-
-            .card h1 {
-                font-size: 22px;
-                margin: 0;
-            }
-
-            .card p {
-                line-height: 1.5;
-            }
-
-            .card a {
-                color: rgb(14, 30, 37);
-                margin: 0;
-                font-weight: 600;
-            }
-
-            p:last-of-type {
-                margin-bottom: 0;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+
         <div class="container">
-            <div class="card">
-                <h1>Page Not Found</h1>
-                <p>
-                    Looks like you've followed a broken link or entered a URL
-                    that doesn't exist on this site.
-                </p>
-                <p>
-                    <a href="https://fknussel.com">Take me back to the homepage</a>
-                </p>
-            </div>
+            <section class="project" id="convocados">
+                <header class="header">
+                    <img src="images/stadium.svg" alt="" class="header__image" />
+                    <h1 class="header__title">Convocados</h1>
+                    <p class="header__description">Collaborated with a backend developer, a product manager and a design/UX team in an agile environment to build a React Native application for both Android and iOS.</p>
+                </header>
+                <ul class="image-gallery">
+                    <li class="image-gallery__item"><img src="projects/convocados-1.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-2.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-3.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-4.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-5.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-6.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-7.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/convocados-8.jpg" alt="" /></li>
+                </ul>
+                <p class="content">In addition to building the mobile app, I took part in shaping up and refining new features and ideas, and helped the backend developer conceptualise and structure the different endpoints for the RESTful API.</p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="project" id="isos">
+                <header class="header">
+                    <img src="images/mountain.svg" alt="" class="header__image" />
+                    <h1 class="header__title">In Search of Snow</h1>
+                    <p class="header__description">Collaborated with a backend developer and a team of UX and visual designers to ship a mobile-first SPA built using React and Redux.</p>
+                </header>
+                <ul class="image-gallery">
+                    <li class="image-gallery__item"><img src="projects/isos-1.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-2.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-3.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-4.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-5.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-6.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-7.jpg" alt="" /></li>
+                    <li class="image-gallery__item"><img src="projects/isos-8.jpg" alt="" /></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="project" id="loan-calculator">
+                <header class="header">
+                    <img src="images/money.svg" alt="" class="header__image" />
+                    <h1 class="header__title">Loan Calculator</h1>
+                    <p class="header__description">Bespoke loan calculator built for a financial institution. This tool can be accessed by clients on their online account and helps them determine the monthly payments on a loan.</p>
+                </header>
+
+                <p class="single-image"><img src="projects/prestamos.jpg" alt=""></p>
+
+                <p class="content">Users simply need to enter the loan amount, term and interest rate in the fields and the tool will provide all the details. They can also download and print out reports generated by the app.</p>
+
+                <p class="content">This application was built from scratch using React. The standalone version is published to the client's site, but there's also a WordPress widget integration that allows the client to embed it onto their institutional site.</p>
+
+                <p class="content">I was given a few examples of different types of loans with different values, and had to work on implementing the math to perform the calculations. I was the only developer on this project, and there were no designers or people from other disciplines involved.</p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="project" id="smartline">
+                <header class="header">
+                    <img src="images/newspaper.svg" alt="" class="header__image" />
+                    <h1 class="header__title">Smartline</h1>
+                    <p class="header__description">Led the rewrite from scratch of an online news platform for a local broadcasting company.</p>
+                </header>
+                <p class="single-image"><img src="projects/smartline.png" alt="" class="smartline-diagram"></p>
+                <p class="content">The project consisted of a RESTful API built using Node/Express/Sequelize/MySQL, a control panel to manage content and a server-side rendered single-page application, both powered by React and Redux.</p>
+                <p class="content">In addition to that, I also developed a TV slider + news ticker using React and Bacon.js, which connected to the RESTful API mentioned above. This full-screen app goes live all day while there's no other content being broadcasted.</p>
+                <p class="content">The API runs on DigitalOcean, the website, control panel and slider are hosted on Netlify, all media gets hosted on DigitalOcean Spaces, emails are sent by Mailgun, and all the automation (CI/CD) is managed by CircleCI.</p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="project" id="coopfrey">
+                <header class="header">
+                    <img src="images/www-click.svg" alt="" class="header__image" />
+                    <h1 class="header__title">Static Site</h1>
+                    <p class="header__description">Responsive static website for a power company.
+                    </p>
+                </header>
+
+                <p class="single-image"><img src="projects/coopfrey.jpg" alt=""></p>
+            </section>
         </div>
     </body>
 </html>

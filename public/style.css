@@ -1,0 +1,219 @@
+@import url('https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css');
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+    font-family: 'Graphik Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Regular'), url('fonts/graphik/GraphikRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Regular Italic'), url('fonts/graphik/GraphikRegularItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Thin'), url('fonts/graphik/GraphikThin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Thin Italic'), url('fonts/graphik/GraphikThinItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Extralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Extralight'), url('fonts/graphik/GraphikExtralight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Extralight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Extralight Italic'), url('fonts/graphik/GraphikExtralightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Light'), url('fonts/graphik/GraphikLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Light Italic'), url('fonts/graphik/GraphikLightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Medium'), url('fonts/graphik/GraphikMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Medium Italic'), url('fonts/graphik/GraphikMediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Semibold'), url('fonts/graphik/GraphikSemibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Semibold Italic'), url('fonts/graphik/GraphikSemiboldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Bold'), url('fonts/graphik/GraphikBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Bold Italic'), url('fonts/graphik/GraphikBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Black'), url('fonts/graphik/GraphikBlack.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Black Italic'), url('fonts/graphik/GraphikBlackItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Super';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Super'), url('fonts/graphik/GraphikSuper.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graphik Super Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Graphik Super Italic'), url('fonts/graphik/GraphikSuperItalic.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    margin: 0 0 64px;
+    text-align: center;
+}
+
+.header__image {
+    margin: 0 0 25px;
+    width: 75px;
+}
+
+.header__title {
+    font-family: Graphik Semibold, sans-serif;
+    color: #0f1215;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__description {
+    font-family: Graphik Light, sans-serif;
+    color: #4e4e50;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.content {
+    font-family: Graphik Light, sans-serif;
+    color: #4e4e50;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container {
+    border-bottom: 1px solid #ccc;
+    padding: 128px 0;
+}
+
+.container:nth-child(even) {
+    background-color: #e2e3e430;
+}
+
+.project {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 100%;
+}
+
+.image-gallery {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-gallery__item {
+    display: inline-flex;
+    max-width: 25%;
+    padding: 5px;
+}
+
+.single-image {
+    text-align: center;
+}
+
+.single-image,
+.image-gallery {
+    margin: 0 0 64px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.smartline-diagram {
+    width: 75%;
+}

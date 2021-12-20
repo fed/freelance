@@ -170,7 +170,7 @@ body {
     padding: 128px 25px;
 }
 
-.container:nth-child(even) {
+.container:nth-child(odd) {
     background-color: #e2e3e430;
 }
 
